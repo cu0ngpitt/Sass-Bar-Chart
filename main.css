@@ -1,0 +1,348 @@
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(2) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 632.6666666667px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(167, 240, 213, 0.55);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(2):before {
+  content: "Sugar Cane";
+}
+rect:nth-child(2):after {
+  content: "1898m";
+}
+
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(3) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 339px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(0, 159, 255, 0.5);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(3):before {
+  content: "Corn";
+}
+rect:nth-child(3):after {
+  content: "1017m";
+}
+
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(4) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 246px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(10, 165, 153, 0.45);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(4):before {
+  content: "Rice";
+}
+rect:nth-child(4):after {
+  content: "738m";
+}
+
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(5) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 237px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(167, 240, 213, 0.4);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(5):before {
+  content: "Wheat";
+}
+rect:nth-child(5):after {
+  content: "711m";
+}
+
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(6) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 211.6666666667px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(0, 159, 255, 0.35);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(6):before {
+  content: "Cow Milk";
+}
+rect:nth-child(6):after {
+  content: "635m";
+}
+
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(7) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 124.6666666667px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(10, 165, 153, 0.3);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(7):before {
+  content: "Potatoes";
+}
+rect:nth-child(7):after {
+  content: "374m";
+}
+
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(8) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 93px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(167, 240, 213, 0.25);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(8):before {
+  content: "Vegetables";
+}
+rect:nth-child(8):after {
+  content: "279m";
+}
+
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(9) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 92.6666666667px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(0, 159, 255, 0.2);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(9):before {
+  content: "Soy Beans";
+}
+rect:nth-child(9):after {
+  content: "278m";
+}
+
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(10) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 87.6666666667px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(10, 165, 153, 0.15);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(10):before {
+  content: "Cassava";
+}
+rect:nth-child(10):after {
+  content: "263m";
+}
+
+/* The index functions takes two arguments: index($list, $element).
+Your element in this case will be ($foods $tons-produced), and your
+list will be $top-foods. Assign the index to a variable $i: */
+/* Next, you'll want to make sure you make use of the rect:nth-child()
+css selector by assigning it the value of $i in string interpolation
+notation in main.scss. */
+rect:nth-child(11) {
+  /* Let's make those bars data-driven by basing their height on the
+  amount of food produced. You will want to use string interpolation so
+   you can assign the $tons-produced as the value in pixels divided by
+   three. This is because otherwise it is too tall to fit in the viewport. */
+  height: 82.3333333333px;
+  /* The three if statements allow us to create an ombre effect. The
+  @if, @else-if and else to check if the index modulus three is equal to
+  zero, one, or otherwise (two). */
+  background-color: rgba(167, 240, 213, 0.1);
+  /* Display the name of the food on each bar by using the :before pseudo
+  element and assigning the content property a value of $food inside of
+   main.scss. */
+  /* In addition to the food, we also want to be sure and display the
+  number of tons produced. Let's use the :after pseudo element to do that.
+  Assign its content property a value of $tons-produced. Since the numbers
+  are in units, concatenate an m to symbolize a million. */
+}
+rect:nth-child(11):before {
+  content: "Sugar Beets";
+}
+rect:nth-child(11):after {
+  content: "247m";
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: #434444;
+}
+
+span {
+  display: block;
+}
+
+rect {
+  width: 24px;
+  float: left;
+  padding-left: 25px;
+  padding-top: 7px;
+  white-space: nowrap;
+  word-break: break-all;
+  position: relative;
+  bottom: 0px;
+  font-size: 12px;
+  color: #707070;
+  background-color: #707070;
+  font-family: "Montserrat", sans-serif;
+}
+rect:before {
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  transform-origin: left top 0;
+  float: left;
+}
+rect:after {
+  position: absolute;
+  top: -15px;
+  left: 0px;
+}
+
+/*# sourceMappingURL=main.css.map */
