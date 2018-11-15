@@ -1,0 +1,105 @@
+// Variables
+$top-foods: ("Sugar Cane" 1898),
+("Corn" 1017),
+("Rice" 738),
+("Wheat" 711),
+("Cow Milk" 635),
+("Potatoes" 374),
+("Vegetables" 279),
+("Soy Beans" 278),
+("Cassava" 263),
+("Sugar Beets" 247);
+$diamond-blue: rgba(0, 159, 255, .6);
+$sea-green: rgba(10, 165, 153, .6);
+$pale-green: rgba(167, 240, 213, .6);
+
+// loops
+@each $food, $tons-produced in $top-foods{
+  /* The index functions takes two arguments: index($list, $element).
+  Your element in this case will be ($foods $tons-produced), and your
+  list will be $top-foods. Assign the index to a variable $i: */
+
+	$i: index($top-foods,($food $tons-produced));
+
+  /* Next, you'll want to make sure you make use of the rect:nth-child()
+  css selector by assigning it the value of $i in string interpolation
+  notation in main.scss. */
+
+  rect:nth-child(#{$i + 1}) {
+    /* Let's make those bars data-driven by basing their height on the
+    amount of food produced. You will want to use string interpolation so
+     you can assign the $tons-produced as the value in pixels divided by
+     three. This is because otherwise it is too tall to fit in the viewport. */
+
+    height: #{$tons-produced/3}px;
+
+    /* The three if statements allow us to create an ombre effect. The
+    @if, @else-if and else to check if the index modulus three is equal to
+    zero, one, or otherwise (two). */
+    
+    @if($i % 3 == 0){
+      background-color: fade-out($sea-green, $i*5/100);
+    }
+
+    @else if($i % 3 == 1){
+      background-color: fade-out($pale-green, $i*5/100);
+    }
+
+    @else{
+      background-color: fade-out($diamond-blue, $i*5/100);
+    }
+
+    /* Display the name of the food on each bar by using the :before pseudo
+    element and assigning the content property a value of $food inside of
+     main.scss. */
+
+    &:before {
+  		content : $food;
+		}
+    /* In addition to the food, we also want to be sure and display the
+    number of tons produced. Let's use the :after pseudo element to do that.
+    Assign its content property a value of $tons-produced. Since the numbers
+    are in units, concatenate an m to symbolize a million. */
+
+    &:after {
+  		content: $tons-produced + "m";
+		}
+	}
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: #434444;
+}
+
+span {
+  display: block;
+}
+
+rect {
+  width: 24px;
+  float: left;
+  padding-left: 25px;
+  padding-top: 7px;
+  white-space: nowrap;
+  word-break: break-all;
+  position: relative;
+  bottom: 0px;
+  font-size: 12px;
+  color: #707070;
+  background-color: #707070;
+  font-family: 'Montserrat', sans-serif;
+  &:before {
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    transform-origin: left top 0;
+    float: left;
+  }
+  &:after {
+    position: absolute;
+    top: -15px;
+    left: 0px;
+  }
+}
